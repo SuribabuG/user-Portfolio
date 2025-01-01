@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compactible" content="IE-Edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+      
+    </head>
+    <body>
+        <div class="hero-header">
+            <div class="wrapper">
+                <header>
+                    <div class="logo">
+                        <i class="fa-solid  fa-g"></i>
+                        <div class="logo-text">Suri Babu</div>
+                    </div>
+                    <nav>
+                        <div class="togglebtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="navlinks">
+                           
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Portfolio</a> </li>
+                            <li> <a href="#">Resume</a></li>
+                            <li> <a href="#">Blog</a></li>
+                            <li> <a href="#">Contact</a></li>
+                            
+                        </ul>
+                    </nav>
+                </header>
+                <div class="container">
+                    <div class="hero-pic">
+                        <img src="images/Hero.png" alt="profile pic">
+                    </div>
+                    <div class="hero-text">
+                        <h5>Hi Im <span class="input">Frontend Developer</span></h5>
+                        <h1>SuriBabu</h1>
+                        <p>  	Enthusiastic and detailed graduate with a strong foundation in programming, database management. Proficient in languages like Java, and HTML, CSS with  developing web projects. Skilled in troubleshooting technical issues and adept at learning new technologies. Looking for an entry-level IT role to leverage skills in software development and problem solving while contributing to innovative solutions in a dynamic environment.</p>
+                        <div class="btn-group">
+                            <a href="#" class="btn active">Download CV</a>
+                            <a href="#" class="btn">Contact</a>
+                        </div>
+                        <div class="social">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+        <script>
+            var togglebtn=document.querySelector(".togglebtn");
+            var nav=document.querySelector(".navlinks");
+            var links=document.querySelector(".navlinks li");
+
+            togglebtn.addEventListener("click", function(){
+                this.classList.toggle("click");
+                nav.classList.toggle("open");
+            })
+
+            var typed=new Typed(".input",{
+                strings:["Frontend Developer","UX Designer","Web Developer"],
+                typedspeed:70,
+                backspeed:55,
+                loop:true
+            })
+        </script>
+        
+    </body>
+</html>
